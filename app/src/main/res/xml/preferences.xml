@@ -10,13 +10,13 @@
             android:summaryOn="@string/prefs_prevent_screen_lock_summary_on"
             android:title="@string/prefs_prevent_screen_lock" />
 
-        <SwitchPreferenceCompat
-            android:defaultValue="@bool/prefs_enable_ads_default"
-            android:dialogTitle="@string/prefs_enable_ads_title"
-            android:key="@string/prefs_enable_ads_key"
-            android:summaryOff="@string/prefs_enable_ads_summary_off"
-            android:summaryOn="@string/prefs_enable_ads_summary_on"
-            android:title="@string/prefs_enable_ads" />
+      <!--  <SwitchPreferenceCompat
+               android:defaultValue="@bool/prefs_enable_ads_default"
+               android:dialogTitle="@string/prefs_enable_ads_title"
+               android:key="@string/prefs_enable_ads_key"
+               android:summaryOff="@string/prefs_enable_ads_summary_off"
+               android:summaryOn="@string/prefs_enable_ads_summary_on"
+               android:title="@string/prefs_enable_ads" />-->
 
     </PreferenceCategory>
 
@@ -24,13 +24,13 @@
         android:key="@string/prefs_cat_recording_key"
         android:title="@string/prefs_cat_recording">
 
-        <SwitchPreferenceCompat
-            android:defaultValue="@bool/prefs_live_mode_default"
-            android:dialogTitle="@string/prefs_live_mode_title"
-            android:key="@string/prefs_live_mode_key"
-            android:summaryOff="@string/prefs_live_mode_summary_off"
-            android:summaryOn="@string/prefs_live_mode_summary_on"
-            android:title="@string/prefs_live_mode" />
+        <!--   <SwitchPreferenceCompat
+               android:defaultValue="@bool/prefs_live_mode_default"
+               android:dialogTitle="@string/prefs_live_mode_title"
+               android:key="@string/prefs_live_mode_key"
+               android:summaryOff="@string/prefs_live_mode_summary_off"
+               android:summaryOn="@string/prefs_live_mode_summary_on"
+               android:title="@string/prefs_live_mode" />-->
 
         <ListPreference
             android:defaultValue="@string/prefs_sample_rate_default"
@@ -56,31 +56,31 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/prefs_cat_pitch">
+    <!--   <PreferenceCategory android:title="@string/prefs_cat_pitch">
+
+         <com.pavelsikun.seekbarpreference.SeekBarPreference
+              android:defaultValue="@integer/prefs_pitch_pull_default"
+              android:dialogTitle="@string/prefs_pitch_pull_title"
+              android:key="@string/prefs_pitch_pull_key"
+              android:summary="@string/prefs_pitch_pull_summary"
+              android:title="@string/prefs_pitch_pull"
+              sample:msbp_interval="5"
+              sample:msbp_maxValue="100"
+              sample:msbp_measurementUnit="%"
+              sample:msbp_minValue="0" />
 
         <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_pitch_pull_default"
-            android:dialogTitle="@string/prefs_pitch_pull_title"
-            android:key="@string/prefs_pitch_pull_key"
-            android:summary="@string/prefs_pitch_pull_summary"
-            android:title="@string/prefs_pitch_pull"
-            sample:msbp_interval="5"
-            sample:msbp_maxValue="100"
-            sample:msbp_minValue="0"
-            sample:msbp_measurementUnit="%" />
+              android:defaultValue="@integer/prefs_pitch_shift_default"
+              android:dialogTitle="@string/prefs_pitch_shift_title"
+              android:key="@string/prefs_pitch_shift_key"
+              android:summary="@string/prefs_pitch_shift_summary"
+              android:title="@string/prefs_pitch_shift"
+              sample:msbp_interval="1"
+              sample:msbp_maxValue="12"
+              sample:msbp_measurementUnit="Notes"
+              sample:msbp_minValue="-36" />
 
-        <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_pitch_shift_default"
-            android:dialogTitle="@string/prefs_pitch_shift_title"
-            android:key="@string/prefs_pitch_shift_key"
-            android:summary="@string/prefs_pitch_shift_summary"
-            android:title="@string/prefs_pitch_shift"
-            sample:msbp_interval="1"
-            sample:msbp_maxValue="12"
-            sample:msbp_minValue="-36"
-            sample:msbp_measurementUnit="Notes" />
-
-    </PreferenceCategory>
+      </PreferenceCategory>-->
 
     <PreferenceCategory android:title="@string/prefs_cat_correction">
 
@@ -92,8 +92,8 @@
             android:title="@string/prefs_corr_str"
             sample:msbp_interval="5"
             sample:msbp_maxValue="100"
-            sample:msbp_minValue="0"
-            sample:msbp_measurementUnit="%" />
+            sample:msbp_measurementUnit="%"
+            sample:msbp_minValue="0" />
 
         <com.pavelsikun.seekbarpreference.SeekBarPreference
             android:defaultValue="@integer/prefs_corr_smooth_default"

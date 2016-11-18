@@ -174,7 +174,7 @@ public class LibraryFragment extends ListFragment {
     public void onViewCreated(View view, Bundle icicle) {
         super.onViewCreated(view, icicle);
 
-        mAdView = (AdView) view.findViewById(R.id.library_ad);
+       //mAdView = (AdView) view.findViewById(R.id.library_ad);
     }
 
     @Override
@@ -188,22 +188,22 @@ public class LibraryFragment extends ListFragment {
 
         SharedPreferences sharedPrefs =
                 PreferenceManager.getDefaultSharedPreferences(getActivity());
-        loadPreferences(sharedPrefs);
-        sharedPrefs.registerOnSharedPreferenceChangeListener(mAdPrefListener);
+        //loadPreferences(sharedPrefs);
+        //sharedPrefs.registerOnSharedPreferenceChangeListener(mAdPrefListener);
     }
 
     @Override
     public void onResume() {
         super.onResume();
 
-        updateAdView();
+       // updateAdView();
     }
 
     @Override
     public void onDestroy() {
         SharedPreferences sharedPrefs =
                 PreferenceManager.getDefaultSharedPreferences(getActivity());
-        sharedPrefs.unregisterOnSharedPreferenceChangeListener(mAdPrefListener);
+     //   sharedPrefs.unregisterOnSharedPreferenceChangeListener(mAdPrefListener);
 
         super.onDestroy();
     }
@@ -238,7 +238,7 @@ public class LibraryFragment extends ListFragment {
                 }
             };
 
-    private void updateAdView() {
+ /*   private void updateAdView() {
         getActivity().runOnUiThread(new Runnable() {
             @Override
             public void run() {
@@ -263,5 +263,5 @@ public class LibraryFragment extends ListFragment {
                         updateAdView();
                     }
                 }
-            };
+            };*/
 }

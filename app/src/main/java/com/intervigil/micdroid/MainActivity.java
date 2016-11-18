@@ -102,13 +102,14 @@ public class MainActivity extends AppCompatActivity
 
         mAudioControl = new AudioController(mContext);
 
-        if (UpdateHelper.isAppUpdated(mContext)) {
+        /*if (UpdateHelper.isAppUpdated(mContext)) {
             UpdateHelper.onAppUpdate(mContext);
             StartupDialogFragment startupDialogFragment = new StartupDialogFragment();
             startupDialogFragment.show(getSupportFragmentManager(), "startup");
         } else {
             mAudioControl.configureRecorder();
-        }
+        }*/
+        mAudioControl.configureRecorder();
     }
 
     @Override
@@ -413,7 +414,7 @@ public class MainActivity extends AppCompatActivity
                             setTitle(item.getTitle());
                             mDrawerLayout.closeDrawers();
                             break;
-                        case R.id.nav_help_item:
+                       /* case R.id.nav_help_item:
                             DialogHelper.showWarning(mContext, R.string.help_title,
                                     R.string.help_text);
                             break;
@@ -427,7 +428,7 @@ public class MainActivity extends AppCompatActivity
                             marketSearchIntent.putExtra("query", "micdroid donate");
                             marketSearchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(marketSearchIntent);
-                            break;
+                            break;*/
                     }
                     return true;
                 }

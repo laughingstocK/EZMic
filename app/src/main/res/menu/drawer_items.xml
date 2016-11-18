@@ -12,7 +12,7 @@
             android:id="@+id/nav_settings_fragment"
             android:icon="@drawable/ic_settings_applications_black_48dp"
             android:title="@string/drawer_item_settings" />
-        <item
+       <!-- <item
             android:id="@+id/nav_help_item"
             android:icon="@drawable/ic_help_black_48dp"
             android:title="@string/drawer_item_help" />
@@ -23,6 +23,6 @@
         <item
             android:id="@+id/nav_donate_item"
             android:icon="@drawable/ic_favorite_black_48dp"
-            android:title="@string/drawer_item_donate" />
+            android:title="@string/drawer_item_donate" />-->
     </group>
 </menu>

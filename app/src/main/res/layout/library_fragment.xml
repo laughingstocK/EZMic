@@ -9,7 +9,7 @@
     android:orientation="vertical"
     android:theme="@style/AppTheme">
 
-    <com.google.android.gms.ads.AdView
+  <com.google.android.gms.ads.AdView
         android:id="@+id/library_ad"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
