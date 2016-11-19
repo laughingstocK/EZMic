@@ -82,7 +82,7 @@
 
       </PreferenceCategory>-->
 
-    <PreferenceCategory android:title="@string/prefs_cat_correction">
+   <!-- <PreferenceCategory android:title="@string/prefs_cat_correction">
 
         <com.pavelsikun.seekbarpreference.SeekBarPreference
             android:defaultValue="@integer/prefs_corr_str_default"
@@ -137,7 +137,7 @@
             sample:msbp_measurementUnit="%"
             sample:msbp_minValue="0" />
 
-    </PreferenceCategory>
+    </PreferenceCategory>-->
 
     <PreferenceCategory android:title="@string/prefs_cat_reset_default">
         <Preference
