@@ -1,5 +1,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:sample="http://schemas.android.com/apk/res-auto">
+    xmlns:sample="http://schemas.android.com/apk/res-auto"
+    >
 
     <PreferenceCategory android:title="@string/prefs_cat_screen">
         <SwitchPreferenceCompat
@@ -10,13 +11,13 @@
             android:summaryOn="@string/prefs_prevent_screen_lock_summary_on"
             android:title="@string/prefs_prevent_screen_lock" />
 
-      <!--  <SwitchPreferenceCompat
-               android:defaultValue="@bool/prefs_enable_ads_default"
-               android:dialogTitle="@string/prefs_enable_ads_title"
-               android:key="@string/prefs_enable_ads_key"
-               android:summaryOff="@string/prefs_enable_ads_summary_off"
-               android:summaryOn="@string/prefs_enable_ads_summary_on"
-               android:title="@string/prefs_enable_ads" />-->
+        <!--  <SwitchPreferenceCompat
+                 android:defaultValue="@bool/prefs_enable_ads_default"
+                 android:dialogTitle="@string/prefs_enable_ads_title"
+                 android:key="@string/prefs_enable_ads_key"
+                 android:summaryOff="@string/prefs_enable_ads_summary_off"
+                 android:summaryOn="@string/prefs_enable_ads_summary_on"
+                 android:title="@string/prefs_enable_ads" />-->
 
     </PreferenceCategory>
 
@@ -82,62 +83,62 @@
 
       </PreferenceCategory>-->
 
-   <!-- <PreferenceCategory android:title="@string/prefs_cat_correction">
+    <!-- <PreferenceCategory android:title="@string/prefs_cat_correction">
 
-        <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_corr_str_default"
-            android:dialogTitle="@string/prefs_corr_str_title"
-            android:key="@string/prefs_corr_str_key"
-            android:summary="@string/prefs_corr_str_summary"
-            android:title="@string/prefs_corr_str"
-            sample:msbp_interval="5"
-            sample:msbp_maxValue="100"
-            sample:msbp_measurementUnit="%"
-            sample:msbp_minValue="0" />
+         <com.pavelsikun.seekbarpreference.SeekBarPreference
+             android:defaultValue="@integer/prefs_corr_str_default"
+             android:dialogTitle="@string/prefs_corr_str_title"
+             android:key="@string/prefs_corr_str_key"
+             android:summary="@string/prefs_corr_str_summary"
+             android:title="@string/prefs_corr_str"
+             sample:msbp_interval="5"
+             sample:msbp_maxValue="100"
+             sample:msbp_measurementUnit="%"
+             sample:msbp_minValue="0" />
 
-        <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_corr_smooth_default"
-            android:dialogTitle="@string/prefs_corr_smooth_title"
-            android:key="@string/prefs_corr_smooth_key"
-            android:summary="@string/prefs_corr_smooth_summary"
-            android:title="@string/prefs_corr_smooth"
-            sample:msbp_interval="5"
-            sample:msbp_maxValue="100"
-            sample:msbp_measurementUnit="%"
-            sample:msbp_minValue="0" />
+         <com.pavelsikun.seekbarpreference.SeekBarPreference
+             android:defaultValue="@integer/prefs_corr_smooth_default"
+             android:dialogTitle="@string/prefs_corr_smooth_title"
+             android:key="@string/prefs_corr_smooth_key"
+             android:summary="@string/prefs_corr_smooth_summary"
+             android:title="@string/prefs_corr_smooth"
+             sample:msbp_interval="5"
+             sample:msbp_maxValue="100"
+             sample:msbp_measurementUnit="%"
+             sample:msbp_minValue="0" />
 
-        <SwitchPreferenceCompat
-            android:defaultValue="@bool/prefs_formant_corr_default"
-            android:dialogTitle="@string/prefs_formant_corr_title"
-            android:key="@string/prefs_formant_corr_key"
-            android:summaryOff="@string/prefs_formant_corr_summary_off"
-            android:summaryOn="@string/prefs_formant_corr_summary_on"
-            android:title="@string/prefs_formant_corr" />
+         <SwitchPreferenceCompat
+             android:defaultValue="@bool/prefs_formant_corr_default"
+             android:dialogTitle="@string/prefs_formant_corr_title"
+             android:key="@string/prefs_formant_corr_key"
+             android:summaryOff="@string/prefs_formant_corr_summary_off"
+             android:summaryOn="@string/prefs_formant_corr_summary_on"
+             android:title="@string/prefs_formant_corr" />
 
-        <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_formant_warp_default"
-            android:dependency="@string/prefs_formant_corr_key"
-            android:dialogTitle="@string/prefs_formant_warp_title"
-            android:key="@string/prefs_formant_warp_key"
-            android:summary="@string/prefs_formant_warp_summary"
-            android:title="@string/prefs_formant_warp"
-            sample:msbp_interval="5"
-            sample:msbp_maxValue="50"
-            sample:msbp_measurementUnit="%"
-            sample:msbp_minValue="-100" />
+         <com.pavelsikun.seekbarpreference.SeekBarPreference
+             android:defaultValue="@integer/prefs_formant_warp_default"
+             android:dependency="@string/prefs_formant_corr_key"
+             android:dialogTitle="@string/prefs_formant_warp_title"
+             android:key="@string/prefs_formant_warp_key"
+             android:summary="@string/prefs_formant_warp_summary"
+             android:title="@string/prefs_formant_warp"
+             sample:msbp_interval="5"
+             sample:msbp_maxValue="50"
+             sample:msbp_measurementUnit="%"
+             sample:msbp_minValue="-100" />
 
-        <com.pavelsikun.seekbarpreference.SeekBarPreference
-            android:defaultValue="@integer/prefs_corr_mix_default"
-            android:dialogTitle="@string/prefs_corr_mix_title"
-            android:key="@string/prefs_corr_mix_key"
-            android:summary="@string/prefs_corr_mix_summary"
-            android:title="@string/prefs_corr_mix"
-            sample:msbp_interval="5"
-            sample:msbp_maxValue="100"
-            sample:msbp_measurementUnit="%"
-            sample:msbp_minValue="0" />
+         <com.pavelsikun.seekbarpreference.SeekBarPreference
+             android:defaultValue="@integer/prefs_corr_mix_default"
+             android:dialogTitle="@string/prefs_corr_mix_title"
+             android:key="@string/prefs_corr_mix_key"
+             android:summary="@string/prefs_corr_mix_summary"
+             android:title="@string/prefs_corr_mix"
+             sample:msbp_interval="5"
+             sample:msbp_maxValue="100"
+             sample:msbp_measurementUnit="%"
+             sample:msbp_minValue="0" />
 
-    </PreferenceCategory>-->
+     </PreferenceCategory>-->
 
     <PreferenceCategory android:title="@string/prefs_cat_reset_default">
         <Preference
